@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ChatterApp.Class1>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.userName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.chat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.time)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>        
+        <td>
+            @Html.DisplayFor(modelItem => item.userName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.chat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.time)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ChatterID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ChatterID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ChatterID })
+        </td>
+    </tr>
+}
+
+</table>

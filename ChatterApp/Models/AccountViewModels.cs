@@ -48,6 +48,7 @@ namespace ChatterApp.Models
 
     public class LoginViewModel
     {
+        
         [Required]
         [Display(Name = "Email")]
         [EmailAddress]
@@ -64,6 +65,18 @@ namespace ChatterApp.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "User Name")]
+        public string UserName { get; set; }
+
+        [Required]
+        [Display(Name = "First Name")]
+        public string firstName { get; set; }
+
+        [Required]
+        [Display(Name = "Last Name")]
+        public string lastName { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
