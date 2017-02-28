@@ -46,6 +46,7 @@ namespace ChatterApp
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Create([Bind(Include = "ChatterID,firstName,lastName,userName,chat,time")] Class1 class1)
         {
             if (ModelState.IsValid)

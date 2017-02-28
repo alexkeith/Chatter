@@ -197,7 +197,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="Class1Controller.cs" />
+    <Compile Include="Controllers\Class1Controller.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -211,6 +211,14 @@
     <Compile Include="Migrations\201702271913173_Chatter.cs" />
     <Compile Include="Migrations\201702271913173_Chatter.Designer.cs">
       <DependentUpon>201702271913173_Chatter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702281712063_classcontroller.cs" />
+    <Compile Include="Migrations\201702281712063_classcontroller.Designer.cs">
+      <DependentUpon>201702281712063_classcontroller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702281824505_redirecttoaction.cs" />
+    <Compile Include="Migrations\201702281824505_redirecttoaction.Designer.cs">
+      <DependentUpon>201702281824505_redirecttoaction.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -313,6 +321,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702271913173_Chatter.resx">
       <DependentUpon>201702271913173_Chatter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702281712063_classcontroller.resx">
+      <DependentUpon>201702281712063_classcontroller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702281824505_redirecttoaction.resx">
+      <DependentUpon>201702281824505_redirecttoaction.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

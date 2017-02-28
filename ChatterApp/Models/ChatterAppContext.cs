@@ -20,5 +20,7 @@ namespace ChatterApp.Models
         }
 
         public System.Data.Entity.DbSet<ChatterApp.Class1> Class1 { get; set; }
+
+       
     }
 }

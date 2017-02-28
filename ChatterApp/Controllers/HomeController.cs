@@ -26,5 +26,6 @@ namespace ChatterApp.Controllers
 
             return View();
         }
+
     }
 }

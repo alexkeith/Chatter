@@ -66,11 +66,11 @@ namespace ChatterApp.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
+        public async Task<ActionResult> Login(LoginViewModel model, string returnUrl, Class1Controller mainchat)
         {
             if (!ModelState.IsValid)
             {
-                return View(model);
+                return RedirectToAction("Chat", "Index", "class1");
             }
 
             // This doesn't count login failures towards account lockout
